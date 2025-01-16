@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[normalem]{ulem}
+\usepackage{tabularx}
+\usepackage{calc}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubSubheadingLeft}[2]{
+  \begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+  \end{description}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+  \end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+  \end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+  \textbf{\Huge \scshape Eliah Reeves} \\ \vspace{1pt}
+  \small (916) 382-2329 $|$ \href{mailto:erreeves@ucsc.edu}{\uline{erreeves@ucsc.edu}} $|$
+  \href{https://www.linkedin.com/in/eliah-reeves/}{\uline{linkedin.com/in/eliah-reeves}} $|$
+  \href{https://github.com/nunibye}{\uline{github.com/nunibye}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of California, Santa Cruz}{ September 2022 -- June 2025}
+{B.S. in Computer Engineering, with a minor in Computer Science, 3.97 GPA}{Santa Cruz, CA}
+\resumeSubSubheadingLeft{Coursework:}{Parallel and Concurrent Programming, Computer System Design, Data Structures and Algorithms, Computer Architecture, VLSI, Verilog to Silicon: A graduate design project}
+
+\resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Student Assistant - Engineering and Architectural Sciences}{ July 2024 -- Present}
+{California Department of Water Resources - Electrical Engineering Services}{ Sacramento, CA}
+\resumeItemListStart
+\resumeItem{Developed and implemented a Power BI dashboard integrated with Oracle Database to monitor maintenance across 26 bulk energy system facilities, tracking 6,500+ protective devices. Eliminated 24 monthly engineering hours and generating an estimated \$42,000 annual cost savings for government operations.}
+\resumeItem{Created MATLAB Simulink model of synchronous machines based on IEEE standards to improve power grid reliability and ensure NERC compliance.}
+\resumeItem{Prototyped a React/TypeScript web application to automate and streamline equipment test report management, reducing report processing time significantly and improving data accuracy.}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+{Software Engineer}{ February 2024 -- May 2024}
+{College Sauce - Social Media Startup}{ Santa Barbara, CA}
+\resumeItemListStart
+\resumeItem{Architected and implemented real-time messaging features for a college social networking app serving 4,500+ UC Santa Barbara students. Utilized Flutter, Firebase and PostgreSQL.}
+\resumeItem{Collaborated with an interdisciplinary and international team of designers, marketers, and developers.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Engineering Intern}{ June 2023 -- September 2023}
+{B\&K Precision Corporation}{ Yorba Linda, CA}
+\resumeItemListStart
+\resumeItem{Designed and launched cross-platform mobile and web application for elementary circuit analysis and general electronics calculations.}
+\resumeItem{Developed a LabView driver/interface for a commercial DC Resistance meter.}
+\resumeItem{Worked collaboratively to fine-tune user experience on a data acquisition platform before product launch.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Youth Climbing Instructor}{ August 2021 -- July 2022}
+{Granite Arch Climbing Center}{ Rancho Cordova, CA}
+\resumeItemListStart
+\resumeItem{Instructed approximately 170 kids ages 5 to 18 in safe rock climbing techniques.}
+\resumeItem{Created lesson plans to encourage the students to challenge themselves, while having fun.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{UCSC Menu App} $|$ \emph{Flutter, Firebase, Python, Go, AdMob}}{ October 2022 -- Present}
+\resumeItemListStart
+\resumeItem{Codevelop, maintain, and monetize an app with $>$3k downloads.}
+\resumeItem{Use web scraping techniques and 3rd party API integration to provide a unified platform for all dining hall information including hours, menus, nutrition data, current occupancy, and payment.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Eko Social Media Network} $|$ \emph{Flutter, Firebase, Go, Google Cloud Platform}}{ July 2023 -- March 2024}
+\resumeItemListStart
+\resumeItem{Lead a team to develop a cross-platform social media network with a small, but active user base.}
+\resumeItem{Features include: account control, user search, public messages, group chats, and personalized notifications.}
+\resumeItem{Android, IOS, and Web platforms fully supported.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{PeerGrader Grading Software} $|$ \emph{Next.js, React, TypeScript, PostgreSQL, Scrum}}{ April 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Working with a team to build a platform for peer feedback and grading.}
+\resumeItem{Designed in collaboration with UCSC professor.}
+
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Languages}{: C/C++, Python, Dart, SQL (Postgres \& Oracle), TypeScript, MATLAB, Verilog} \\
+        \textbf{Frameworks}{: Flutter, React, Node.js, Next.js} \\
+        \textbf{Services}{: Google Cloud Platform, Firebase, Supabase, Google Play Console, Apple Developer, AdMob} \\
+    \textbf{Developer Tools}{: Git, Docker}\\}}
+\end{itemize}
+
+
+%-------------------------------------------
+\end{document}
